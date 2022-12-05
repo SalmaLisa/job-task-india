@@ -2,19 +2,19 @@ import React from "react";
 
 const CurvedDiv = () => {
   return (
-    <div>
-      <div className="-mt-40">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+    <div className="">
+      <div>
+        {/* <svg className="h-12" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
           <path
             fill="#fff0c9"
             fill-opacity="1"
             d="M0,160L60,170.7C120,181,240,203,360,197.3C480,192,600,160,720,149.3C840,139,960,149,1080,154.7C1200,160,1320,160,1380,160L1440,160L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z"
           ></path>
-        </svg>
+        </svg> */}
       </div>
       <div
         style={{ background: "#FFF0C9" }}
-        className="h-[206px] w-full "
+        className="h-[306px] w-full "
       ></div>
 
       <div style={{ transform: "rotate(-2deg)" }} className="-mt-24">

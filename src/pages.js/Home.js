@@ -10,7 +10,7 @@ const Home = () => {
       <div className='relative'>
       <CurvedDiv></CurvedDiv>
       </div>
-      <div className='absolute top-40'>
+      <div className='absolute top-32'>
         <Brocli></Brocli>
       </div>
       <div className="py-12 ml-20  w-9/12">

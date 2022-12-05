@@ -2,7 +2,7 @@ import React, { useState } from "react";
 
 import logo from "../assets/logo.png";
 import offer from "../assets/Vector.png";
-import { MdGpsFixed } from 'react-icons/md';
+import { MdGpsFixed } from "react-icons/md";
 import { HiChevronDown, HiOutlineSearch } from "react-icons/hi";
 import { AiOutlineShoppingCart } from "react-icons/ai";
 import { CgProfile } from "react-icons/cg";
@@ -12,20 +12,27 @@ const Nav = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   return (
-    <div className="px-4 py-5 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 ">
+    <div className="px-4 py-5 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 z-50">
       <div className="relative flex items-center justify-between">
-        <div
-          className="inline-flex items-center"
-          
-        >
+        <Link to="/" className="inline-flex items-center">
           <img className=" w-14 h-[75px]" src={logo} alt="" />
           <p className="ml-5  flex items-center">
-          <MdGpsFixed className="text-xl text-gray-600 "></MdGpsFixed>
-            <span className="border-b border-gray-700 text-gray-700 ml-2 mr-1 font-semibold">Hyder Hills, Green Villa, Hyderabad</span>
+            <MdGpsFixed className="text-xl text-gray-600 "></MdGpsFixed>
+            <span className="border-b border-gray-700 text-gray-700 ml-2 mr-1 font-semibold">
+              Hyder Hills, Green Villa, Hyderabad
+            </span>
             <HiChevronDown className="text-2xl text-amber-500"></HiChevronDown>
           </p>
-        </div>
+        </Link>
         <ul className="flex items-center hidden space-x-8 lg:flex">
+          <li>
+            <Link
+              to="/"
+              className="font-medium tracking-wide text-gray-700 flex items-center"
+            >
+              <span className="ml-1 font-bold">Home</span>
+            </Link>
+          </li>
           <li>
             <Link
               to="/search"
@@ -35,12 +42,10 @@ const Nav = () => {
             >
               <HiOutlineSearch></HiOutlineSearch>
               <span className="ml-1 font-bold">Search</span>
-              
             </Link>
           </li>
           <li>
             <Link
-             
               aria-label="offer"
               title="offer"
               className="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400 flex items-center"
@@ -62,7 +67,6 @@ const Nav = () => {
           </li>
           <li>
             <Link
-             
               aria-label="profile"
               title="profile"
               className="font-medium tracking-wide text-gray-700 flex items-center"
@@ -106,9 +110,7 @@ const Nav = () => {
                     >
                       <img className=" w-20" src={logo} alt="" />
                       <span className="ml-2 text-3xl tracking-wide font-semibold text-gray-800  italic">
-                        <span className=" font-bold border-yellow-400 border-b-4">
-                          
-                        </span>{" "}
+                        <span className=" font-bold border-yellow-400 border-b-4"></span>{" "}
                         Cars
                       </span>
                     </Link>

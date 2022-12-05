@@ -34,7 +34,7 @@ const CartPage = () => {
         <div>
           <CurvedDiv></CurvedDiv>
         </div>
-        <div className="grid grid-cols-12 w-11/12 absolute top-60 left-28">
+        <div className="grid grid-cols-12 w-11/12 absolute top-24 left-24">
           <div className="flex col-span-5">
             <div className="flex">
               <div className="bg-white w-44 h-40 border justify-center items-center rounded-[20px] flex shadow-xl">

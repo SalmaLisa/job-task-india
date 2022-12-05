@@ -12,7 +12,7 @@ const SearchPage = () => {
         <div>
           <CurvedDiv></CurvedDiv>
         </div>
-        <div className="absolute top-80 left-52">
+        <div className="absolute top-56 left-52">
           <div className=" border bg-white flex items-center rounded-lg">
             <input
               className=" w-full py-3 px-5 text-xl "
@@ -29,9 +29,10 @@ const SearchPage = () => {
           </div>
         </div>
       </div>
-      <div>
-        <Categories></Categories>
+      <div className="mt-32">
+         <Categories></Categories>
       </div>
+     
       <FooterCurve></FooterCurve>
     </div>
   );
