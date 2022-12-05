@@ -28,9 +28,9 @@ const Nav = () => {
         <ul className="flex items-center hidden space-x-8 lg:flex">
           <li>
             <Link
-              to="/home"
-              aria-label="home"
-              title="home"
+              to="/search"
+              aria-label="search"
+              title="search"
               className="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400 flex items-center"
             >
               <HiOutlineSearch></HiOutlineSearch>

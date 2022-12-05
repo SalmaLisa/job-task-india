@@ -1,6 +1,9 @@
-import { BrowserRouter, createBrowserRouter, RouterProvider } from 'react-router-dom';
+import {  createBrowserRouter, RouterProvider } from 'react-router-dom';
 import './App.css';
 import Main from './layout/Main';
+import CartPage from './pages.js/CartPage';
+import Home from './pages.js/Home';
+import SearchPage from './pages.js/SearchPage';
 
 
 function App() {
@@ -9,7 +12,18 @@ function App() {
       path: '/',
       element: <Main></Main>,
       children: [
-         
+        {
+          path: '/',
+          element: <Home></Home>
+         },
+        {
+          path: '/search',
+          element: <SearchPage></SearchPage>
+         },
+        {
+          path: '/cart',
+          element: <CartPage></CartPage>
+         },
        ]
     }
     
